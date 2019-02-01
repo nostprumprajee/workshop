@@ -2,6 +2,13 @@ module.exports = {
   /*
    ** Headers of the page
    */
+  mode: 'spa',
+router: {
+  mode: 'hash'
+},
+  render: {
+    resourceHints: false,
+  },
   head: {
     title: "workshop",
     meta: [
