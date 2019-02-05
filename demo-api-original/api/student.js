@@ -19,6 +19,19 @@ router.get('/', async (req, res) => {  // ใช้ async function
   }
 })
 
+router.get('/list', async (req, res) => {
+  try {
+    let rows = await req.db.raw('SELECT * FROM student')
+    // let rows = await req.db('student').select('code', 'firstName as fname', 'lastName')
+    res.send({
+      ok: true,
+      student: rows,
+    })
+  } catch (e) {
+    res.send({ ok: false, error: e.message })
+  }
+})
+
 // /api/student/save
 router.post('/save', async (req, res) => {
   try {
