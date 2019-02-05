@@ -27,14 +27,30 @@ router: {
   loading: { color: "#3B8070" },
   
   css: ['~/assets/main.styl'],
-  plugins: ['~/plugins/vuetify'],
+  plugins: [
+    '~/plugins/vuetify',
+    '~/plugins/axios' //-- add plugins axios
+  ],
+  proxy: {
+    '/api': 'http://127.0.0.1:8888', //-- ตั้งค่า map proxy url api server
+    ws: true
+  },
+  modules: [
+    '@nuxtjs/proxy' //-- add modules proxy 
+  ],
+  build: {
+    vendor: [
+      'vuetify',
+      'vue-axios' //-- add vendor vue-axios
+    ],
+  
+  
 
   /*
    ** Build configuration
    */
 
-  build: {
-    vendor: ['vuetify'],
+  
     /*
      ** Run ESLint on save
      */
@@ -45,8 +61,8 @@ router: {
           test: /\.(js|vue)$/,
           loader: "eslint-loader",
           exclude: /(node_modules)/
-        });
+        })
       }
     }
   }
-};
+}

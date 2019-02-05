@@ -1,11 +1,12 @@
 
 module.exports = {
-  port: 7000,
+  port: 8888,
   db: {
     host : 'localhost',
-    user : 'demo',
-    password : '1234',
-    database : 'demo'
+    user : 'demoadmin',
+    password : '123456',
+    database : 'db_webservice',
+    insecureAuth : true
   },
   socket: {
     url: 'https://socket.bpcd.xenex.io',

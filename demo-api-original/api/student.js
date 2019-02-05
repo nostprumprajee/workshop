@@ -5,16 +5,17 @@ module.exports = router
 //     http://localhost:7000/api/student?class=1
 
 // /api/student/list
-router.get('/list', async (req, res) => {
+// http://localhost:8888/api/student // path การเข้าถึง api
+router.get('/', async (req, res) => {  // ใช้ async function
   try {
-    let rows = await req.db.raw('SELECT * FROM student')
-    // let rows = await req.db('student').select('code', 'firstName as fname', 'lastName')
-    res.send({
-      ok: true,
-      student: rows,
+    let db = req.db
+    let rows = await db('student') // ใช้ await เพื่อรอผลรับ
+    res.send({ 
+      ok: true,       // ส่ง status 
+      student: rows,  // ส่งค่ากลับ
     })
   } catch (e) {
-    res.send({ ok: false, error: e.message })
+      res.send({ ok: false, error: e.message })
   }
 })
 
