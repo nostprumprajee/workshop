@@ -1,0 +1,22 @@
+{
+  "event": {
+    "created_timestamp": "1534347829024",
+    "message_create": {
+      "message_data": {
+        "text": "test message",
+        "entities": {
+          "symbols": [],
+          "user_mentions": [],
+          "hashtags": [],
+          "urls": []
+        }
+      },
+      "sender_id": "4012966701",
+      "target": {
+        "recipient_id": "372018022"
+      }
+    },
+    "type": "message_create",
+    "id": "761517675243679747"
+  }
+}
