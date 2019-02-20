@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import HelloApp from './HelloApp'
+import MyStatelessComponent from './MyStatelessComponent'
 
 class App extends Component {
   render() {
@@ -9,7 +10,12 @@ class App extends Component {
       <div className="App">
       
       <HelloApp message="This is message sent from App" />
+      <MyStatelessComponent
+    title="Stateless"
+    message="Example of Stateless Component"
+  />
         <header className="App-header">
+
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -22,6 +28,7 @@ class App extends Component {
           >
             Learn React
           </a>
+          
         </header>
       </div>
     );

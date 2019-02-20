@@ -1,5 +1,7 @@
 import React from 'react'
-
+function Hello(props) {
+    return <h1>Test! {props.name}</h1>
+  }
 class HelloApp extends React.Component {
     constructor(props) {
     super(props)
@@ -20,6 +22,7 @@ class HelloApp extends React.Component {
     render() {
         return (
       <React.Fragment>
+          <Hello name="Nost" />
         <h1>Nost! React</h1>
         <p>{this.props.message}</p>
         <button onClick={this.handleClick}>Click me!</button>
