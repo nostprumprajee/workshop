@@ -1,0 +1,15 @@
+service: Lambda
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  stage: dev
+  region: us-east-2
+
+functions:
+  bnk:
+    handler: handler.bnk
+    events:
+      - http:
+         path: bnk/members
+method: get
