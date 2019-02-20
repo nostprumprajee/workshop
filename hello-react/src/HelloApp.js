@@ -22,7 +22,7 @@ class HelloApp extends React.Component {
     render() {
         return (
       <React.Fragment>
-          <Hello name="Nost" />
+        <Hello name="Nost" />
         <h1>Nost! React</h1>
         <p>{this.props.message}</p>
         <button onClick={this.handleClick}>Click me!</button>
