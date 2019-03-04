@@ -1,13 +1,12 @@
-package com.example.Cosmetics.services;
+package com.iphayao.domo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CosmeticsApplication {
+public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CosmeticsApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 	}
-
 }
