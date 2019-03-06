@@ -31,10 +31,17 @@ public class CountryRepository {
         uk.setCapital("London");
         uk.setCurrency(Currency.GBP);
         uk.setPopulation(63705000);
+        
+        Country jp = new Country();
+        jp.setName("Japan");
+        jp.setCapital("Tokyo");
+        jp.setCurrency(Currency.JPY);
+        jp.setPopulation(6370000);
 
         countries.put(spain.getName(), spain);
         countries.put(poland.getName(), poland);
         countries.put(uk.getName(), uk);
+        countries.put(jp.getName(), jp);
     }
 
     public Country findCountry(String name) {
