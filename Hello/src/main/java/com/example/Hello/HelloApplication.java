@@ -16,7 +16,7 @@ public class HelloApplication {
 
 	@GetMapping("/hello")
 	public String hello() {
-		return "Hello Docker";
+		return "Hello Docker+";
 }
 
 }
