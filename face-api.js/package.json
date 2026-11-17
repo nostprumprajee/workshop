@@ -40,7 +40,7 @@
     "tslib": "^1.9.3"
   },
   "devDependencies": {
-    "@tensorflow/tfjs-node": "^0.2.3",
+    "@tensorflow/tfjs-node": "^4.22.0",
     "@types/jasmine": "^3.3.8",
     "@types/node": "^10.12.18",
     "canvas": "2.0.1",
