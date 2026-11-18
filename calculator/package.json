@@ -13,7 +13,7 @@
     "big.js": "^5.1.2",
     "github-fork-ribbon-css": "^0.2.1",
     "react": "^16.4.0",
-    "react-dom": "^16.4.0"
+    "react-dom": "^16.4.2"
   },
   "scripts": {
     "start": "react-scripts start",
